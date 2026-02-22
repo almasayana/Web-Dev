@@ -7,9 +7,48 @@
   margin: 0 auto;
 }
 
+.sort-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 10px 24px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-start;
+}
+
+.sort-container button {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px; 
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.sort-container button:hover {
+  border-color: #0089d0;
+  color: #0089d0;
+  background-color: #f0f7fb;
+}
+
+.sort-container button:active {
+  transform: scale(0.97);
+}
+
 @media (max-width: 600px) {
   .product-grid {
     grid-template-columns: 1fr;
     padding: 16px;
+  }
+
+  .sort-container {
+    flex-direction: column; 
+    padding: 10px 16px;
   }
 }

@@ -136,3 +136,55 @@ input[type="checkbox"] {
     color: gray;
     opacity: 0.7;
 }
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-buttons button {
+    flex: 1;
+    padding: 8px 0;
+    background: #edeefe;
+    color: #5a4fcf;
+    border: 1px solid #5a4fcf;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-buttons button:hover {
+    background: #5a4fcf;
+    color: white;
+}
+.filter-buttons .active {
+    background: #667eea;
+    color: white;
+}
+
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+#toggle-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #5a4fcf;
+  background: #edeefe;
+  color: #5a4fcf;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#toggle-btn:hover {
+  background: #5a4fcf;
+  color: white;
+}

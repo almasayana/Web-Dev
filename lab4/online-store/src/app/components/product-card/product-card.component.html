@@ -39,18 +39,17 @@
     <p class="product-description">{{ product.description }}</p>
 
     <div class="rating-price">
+      <div class="rating"><span class="star">★</span> {{ product.rating }}</div>
       <div class="price">{{ product.price | number: "1.0-0" }} ₸</div>
     </div>
 
     <div class="actions">
-  <button class="share-btn buy" (click)="addToCart()">
-   В корзину
-  </button>
-
-  <button class="share-btn fav" (click)="addToFavorites()">
-    В избранное
-  </button>
-</div>
-
+      <button class="share-btn whatsapp" (click)="shareToWhatsApp()">
+        Share on WhatsApp
+      </button>
+      <button class="share-btn telegram" (click)="shareToTelegram()">
+        Share on Telegram
+      </button>
+    </div>
   </div>
 </div>

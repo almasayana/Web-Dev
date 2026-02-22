@@ -13,20 +13,16 @@ export class ProductCardComponent {
   @Input() product!: Product;
   currentImageIndex: number = 0;
 
-  cart: Product[] = [];
-favorites: Product[] = [];
+  shareToWhatsApp() {
+    const url = encodeURIComponent(this.product.link);
+    window.open(`https://wa.me/?text=Check out this product: ${url}`, '_blank');
+  }
 
-addToCart() {
-  this.cart.push(this.product);
-  console.log('Корзина:', this.cart);
-  alert('Товар добавлен в корзину');
-}
-
-addToFavorites() {
-  this.favorites.push(this.product);
-  console.log('Избранное:', this.favorites);
-  alert('Добавлено в избранное');
-}
+  shareToTelegram() {
+    const url = encodeURIComponent(this.product.link);
+    const text = encodeURIComponent(this.product.name);
+    window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+  }
 
   nextImage() {
     if (this.product.images && this.product.images.length > 0) {

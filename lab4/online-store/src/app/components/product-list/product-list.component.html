@@ -1,6 +1,11 @@
+<div class="sort-container">
+  <button (click)="sortByDesc()">Рейтинг: По убыванию</button>
+  <button (click)="sortByAsc()">Рейтинг: По возрастанию</button>
+</div>
+
 <div class="product-grid">
   <app-product-card
-    *ngFor="let product of products"
+    *ngFor="let product of productList"
     [product]="product"
   ></app-product-card>
 </div>

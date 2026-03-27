@@ -26,7 +26,6 @@ export class App {
       return matchesSearch && matchesCategory;
     });
   }
-
   onProductRemove(productId: number): void {
     this.products = this.products.filter(p => p.id !== productId);
   }

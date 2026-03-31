@@ -1,8 +1,13 @@
 venv/
+
 __pycache__/
 *.pyc
-db.sqlite3
 *.pyo
-.env
+*.pyd
 
-.  
+*.log
+
+db.sqlite3
+
+*/__pycache__/
+*/migrations/__pycache__/
